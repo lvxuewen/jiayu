@@ -1,12 +1,14 @@
-package com.example.demo;
+package com.jiayu;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.ServletComponentScan;
 
 @SpringBootApplication
-public class DemoApplication {
+@ServletComponentScan
+public class BootApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
+		SpringApplication.run(BootApplication.class, args);
 	}
 }
